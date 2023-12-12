@@ -80,7 +80,7 @@ const Banner = () => {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'
+              className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0 lg:-mt-4'
             >
               <a href='#'>
                 <FaYoutube />
