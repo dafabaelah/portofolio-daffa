@@ -3,7 +3,7 @@ name: CI/CD for ReactJS
 on:
   push:
     branches:
-      - main
+      - cv-daffa
 
 jobs:
   build:
