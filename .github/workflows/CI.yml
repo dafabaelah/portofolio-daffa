@@ -38,7 +38,7 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: ${{ secrets.DEPLOY_PORT }}
         source: "build/"
-        target: "/home/deploy/" 
+        target: "~/deploy" 
     
     - name: SSH into Server and Restart Nginx
       uses: appleboy/ssh-action@master
