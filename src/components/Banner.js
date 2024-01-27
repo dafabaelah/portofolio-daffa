@@ -1,8 +1,8 @@
 import React from 'react';
 // images
-import Image from '../assets/avatar.svg';
+import Image from '../assets/avatar-df.svg';
 // icons
-import { FaGithub, FaYoutube, FaDribbble } from 'react-icons/fa';
+import { FaGithub, FaYoutube, FaLinkedin} from 'react-icons/fa';
 // type animation
 import { TypeAnimation } from 'react-type-animation';
 // motion
@@ -25,9 +25,9 @@ const Banner = () => {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='text-[55px] font-bold leading-[0.8] lg:text-[110px]'
+              className='text-[45px] font-bold leading-[0.8] lg:text-[90px]'
             >
-              BEN <span>AIDEN</span>
+              DAFFA <span>AKHDAN FADHILLAH</span>
             </motion.h1>
             <motion.div 
               variants={fadeIn('up', 0.4)}
@@ -80,16 +80,18 @@ const Banner = () => {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0 lg:-mt-4'
+              className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'
             >
               <a href='#'>
                 <FaYoutube />
               </a>
-              <a href='#'>
+              <a href='https://github.com/dafabaelah'>
                 <FaGithub />
               </a>
-              <a href='#'>
-                <FaDribbble />
+              <a
+                href='https://www.linkedin.com/in/daffa-akhdan-fadhillah/'
+              >
+                <FaLinkedin />
               </a>
             </motion.div>
           </div>
