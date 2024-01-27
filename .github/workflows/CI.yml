@@ -38,9 +38,7 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: ${{ secrets.DEPLOY_PORT }}
         source: "build/"
-        target: "/var/www/html/daffa-af.tech/cooming"
-        script: |
-          sudo scp -i "${{ secrets.SSH_PRIVATE_KEY }}" -P ${{ secrets.DEPLOY_PORT }} -r "build/" "${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:/var/www/html/daffa-af.tech/cooming"   
+        target: "/home/deploy/" 
     
     - name: SSH into Server and Restart Nginx
       uses: appleboy/ssh-action@master
