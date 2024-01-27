@@ -29,7 +29,17 @@ jobs:
 
     needs: build
 
-    steps:      
+    steps:
+    - name: Copy Build Artifacts to Server
+      uses: appleboy/scp-action@v0.1.7
+      with:
+        host: ${{ secrets.DEPLOY_HOST }}
+        username: ${{ secrets.DEPLOY_USER }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        port: ${{ secrets.DEPLOY_PORT }}
+        source: "build/"
+        target: "/var/www/html/daffa-af.tech/cooming"   
+    
     - name: SSH into Server and Restart Nginx
       uses: appleboy/ssh-action@master
       with:
