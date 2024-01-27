@@ -38,4 +38,4 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: ${{ secrets.DEPLOY_PORT }}
         script: |
-          sudo systemctl restart nginx
+          sudo -S <<< "${{ secrets.DEPLOY_PASSWORD }}" systemctl restart nginx
