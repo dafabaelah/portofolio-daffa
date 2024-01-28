@@ -45,6 +45,7 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: ${{ secrets.DEPLOY_PORT }}
         script: |
-          sudo -S <<< "${{ secrets.DEPLOY_PASSWORD }}" sudo docker stop container-portofolio-daffa || true
-          sudo docker rm container-portofolio-daffa || true
-          sudo docker run -d --name container-portofolio-daffa -p 8085:8085 portofolio-daffa
+          echo "${{ secrets.DEPLOY_PASSWORD }}" | sudo -S su -
+          docker stop container-portofolio-daffa || true
+          docker rm container-portofolio-daffa || true
+          docker run -d --name container-portofolio-daffa -p 8085:8085 portofolio-daffa
