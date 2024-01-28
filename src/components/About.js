@@ -7,13 +7,15 @@ import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 // variants
 import { fadeIn } from '../variants';
+// import link
+import { Link } from 'react-scroll';
 
 const About = () => {
   const [ref, inView] = useInView({
     threshold: 0.5,
   });
   return (
-    <section className='section mt-10' id='about' ref={ref}>
+    <section className='section lg:mt-40' id='about' ref={ref}>
       <div className='container mx-auto'>
         <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-24 lg:gap-y-5 h-screen'>
           {/* img */}
@@ -69,7 +71,12 @@ const About = () => {
             </div>
             {/* button */}
             <div className='flex gap-x-8 items-center'>
-              <button className='btn btn-lg'>Contact me</button>
+              <Link to='contact' 
+                activeClass='active' 
+                smooth={true} 
+                spy={true} >
+                  <button className='btn btn-lg'>Contact me</button>
+              </Link>
               <a href='/' className='text-gradient btn-link'>
                 My Portfolio
               </a>
