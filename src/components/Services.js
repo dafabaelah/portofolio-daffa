@@ -32,7 +32,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className='section lg:mt-10' 
+    <section className='section lg:mt-40' 
       id='services'>
       <div className='container mx-auto'>
         <div className='flex flex-col lg:flex-row'>
