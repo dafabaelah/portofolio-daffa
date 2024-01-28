@@ -37,7 +37,7 @@ jobs:
         script: |
           sudo -S <<< "${{ secrets.DEPLOY_PASSWORD }}" docker pull "${{ secrets.DOCKER_USERNAME }}/portofolio-daffa"
 
-    - name: SSH into Server and Run Docker Container
+    - name: SSH into Server and stop Docker Image
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.DEPLOY_HOST }}
@@ -45,7 +45,24 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: ${{ secrets.DEPLOY_PORT }}
         script: |
-          echo "${{ secrets.DEPLOY_PASSWORD }}" | sudo -S su -
-          docker stop container-portofolio-daffa || true
-          docker rm container-portofolio-daffa || true
-          docker run -d --name container-portofolio-daffa -p 8085:8085 portofolio-daffa
+          sudo -S <<< "${{ secrets.DEPLOY_PASSWORD }}" docker stop container-portofolio-daffa || true
+
+    - name: SSH into Server and remove Docker Image
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.DEPLOY_HOST }}
+        username: ${{ secrets.DEPLOY_USER }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        port: ${{ secrets.DEPLOY_PORT }}
+        script: |
+          sudo -S <<< "${{ secrets.DEPLOY_PASSWORD }}" docker rm container-portofolio-daffa || true
+
+    - name: SSH into Server and deploy Docker Container
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.DEPLOY_HOST }}
+        username: ${{ secrets.DEPLOY_USER }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        port: ${{ secrets.DEPLOY_PORT }}
+        script: |
+          sudo -S <<< "${{ secrets.DEPLOY_PASSWORD }}" docker run -d --name container-portofolio-daffa -p 8084:8085 "${{ secrets.DOCKER_USERNAME }}/portofolio-daffa"
