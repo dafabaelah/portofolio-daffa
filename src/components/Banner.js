@@ -9,6 +9,8 @@ import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 // variants
 import { fadeIn } from '../variants';
+// import link
+import { Link } from 'react-scroll';
 
 const Banner = () => {
   return (
@@ -39,11 +41,13 @@ const Banner = () => {
               <span className='text-white mr-4'>I am a</span>
               <TypeAnimation 
                 sequence={[
-                  'Web Designer', 
+                  'Frontend Developer', 
                   2000, 
-                  'Web Developer', 
+                  'Backend Developer', 
                   2000, 
-                  'Content Creator', 
+                  'Cloud Engineer', 
+                  2000,
+                  'UI/UX Designer', 
                   2000
                 ]}
                 speed={50}
@@ -59,7 +63,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className='mb-8 max-w-lg mx-auto lg:mx-0'
             >
-              Qui ipsum magna sit exercitation anim cupidatat laborum ipsum Reprehenderit laborum mollit eu enim est. Sunt dolor qui voluptate anim nulla excepteur ea.
+              Passionate Computer Engineering graduate with hands-on experience in PHP and JavaScript for both Frontend and Backend web development, eager to contribute to innovative projects and dynamic teams.
 
             </motion.p>
             <motion.div 
@@ -69,8 +73,13 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'
             >
-              <button className='btn btn-lg'>Contact me</button>
-              <a href='/' className='text-gradient btn-link'>
+              <Link to='contact' 
+                activeClass='active' 
+                smooth={true} 
+                spy={true} >
+                  <button className='btn btn-lg'>Contact me</button>
+              </Link>
+              <a href='#contact' className='text-gradient btn-link'>
                 My Portfolio
                 </a>
             </motion.div>
