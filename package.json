@@ -35,6 +35,9 @@
       "last 1 safari version"
     ]
   },
+  "engines": {
+    "node": "16.13.2"
+  },
   "devDependencies": {
     "framer-motion": "^8.4.3",
     "react-countup": "^6.4.0",
