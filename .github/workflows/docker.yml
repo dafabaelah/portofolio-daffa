@@ -3,7 +3,7 @@ name: CI/CD for ReactJS App with Docker
 on:
   push:
     branches:
-      - cv-daffa
+      - main
 
 jobs:
   build:

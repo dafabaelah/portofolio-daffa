@@ -24,9 +24,9 @@ const Work = () => {
             <div>
               <h2 className='h2 leading-tight text-accent'>
                 My Latest <br />
-                Work.
+                Project Experience.
               </h2>
-              <p className='max-w-sm mb-16'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, hic! Harum quis, cum velit neque esse eos molesatias doloremque explicabo!
+              <p className='max-w-sm mb-8'>Key contributor in project implementation, proficient in management, cutting-edge tech, and seamless integration, achieving impactful results through dedication.
               </p>
               <button className='btn btn-sm'>View all projects</button>
             </div>

@@ -9,22 +9,22 @@ import { fadeIn } from '../variants';
 // services data
 const services = [
   {
-  name: 'Web Design',
+  name: 'Frontend Developer',
   description: 'Ipsum occaecat ullamco enim pariatur est eiusmod minim eu. Quis incididunt laboris minim duis anim sit culpa esse. Ut velit eu veniam labore. ',
   link: 'Learn more'
   },
   {
-    name: 'Development',
+    name: 'Backend Developer',
     description: 'Ipsum occaecat ullamco enim pariatur est eiusmod minim eu. Quis incididunt laboris minim duis anim sit culpa esse. Ut velit eu veniam labore. ',
     link: 'Learn more'
   },
   {
-    name: 'Digital Marketing',
+    name: 'Cloud Engineer',
     description: 'Ipsum occaecat ullamco enim pariatur est eiusmod minim eu. Quis incididunt laboris minim duis anim sit culpa esse. Ut velit eu veniam labore. ',
     link: 'Learn more'
   },
   {
-    name: 'Product Branding',
+    name: 'UI/UX Designer ',
     description: 'Ipsum occaecat ullamco enim pariatur   est eiusmod minim eu. Quis incididunt laboris minim duis anim sit culpa esse. Ut velit eu veniam labore. ',
     link: 'Learn more'
   },
@@ -46,7 +46,7 @@ const Services = () => {
           >
             <h2 className='h2 text-accent mb-6'>What I Do.</h2>
             <h3 className='h3 max-w-[455px] mb-16'>
-              I'm a Freelancer Front-end Development with over 5 years of experience.
+            I'm a interested in the position of a Front-end Developer & Backend-end Developer with over 1 years of experience.
             </h3>
             <button className='btn btn-sm'>See my work</button>
           </motion.div>

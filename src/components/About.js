@@ -33,14 +33,14 @@ const About = () => {
             className='flex-1'
           >
             <h2 className='h2 text-accent'>About me.</h2>
-            <h3 className='h3 mb-4'>I'm a Freelance Front-end Developer with over 5 years of experience.</h3>
-            <p className='mb-6'>Deserunt fugiat cupidatat qui aliquip sit ullamco ipsum do tempor sunt. Mollit laborum anim officia velit adipisicing qui duis. Duis excepteur magna ut ea reprehenderit anim adipisicing in. Do mollit fugiat amet aute. Ullamco cupidatat laborum fugiat amet reprehenderit reprehenderit sint duis amet. Aliqua officia ad labore eu elit laborum qui proident minim.
+            <h3 className='h3 mb-4'>I'm a interested in the position of a Front-end Developer & Backend-end Developer with over 1 years of experience.</h3>
+            <p className='mb-6'>I'm a fresh graduate in Computer Engineering from Pasundan University with a profound passion for software engineering. My practical experience includes proficient use of PHP for Laravel implementation and expertise in JavaScript for both Frontend and Backend web development. In my most recent project, I actively participated in hands-on work with JavaScript. I am enthusiastic about applying my academic background and practical skills to real-world projects, staying current with industry trends and technologies to contribute effectively to the dynamic field of software engineering.
             </p>
             {/* stats */}
             <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
               <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                  {inView ? <CountUp start={0} end={13} duration={3} /> : 0} 
+                  {inView ? <CountUp start={0} end={1} duration={3} /> : 0} 
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>
                   Years of <br /> 
@@ -49,24 +49,23 @@ const About = () => {
               </div>
               <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                  {inView ? <CountUp start={0} end={15} duration={3} /> : 0} 
-                  k+
+                  {inView ? <CountUp start={0} end={5} duration={3} /> : 0} 
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>
                   Projects <br /> 
                   Completed
                 </div>
               </div>
-              <div>
+              {/* <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                  {inView ? <CountUp start={0} end={12} duration={3} /> : 0}
+                  {inView ? <CountUp start={0} end={1} duration={3} /> : 0}
                   k+ 
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>
                   Satisfied <br /> 
                   Clients
                 </div>
-              </div>
+              </div> */}
             </div>
             {/* button */}
             <div className='flex gap-x-8 items-center'>
