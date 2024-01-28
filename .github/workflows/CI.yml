@@ -31,9 +31,9 @@ jobs:
 
     steps:
     - name: Copy Build Artifacts to Server
-      run: |
-        echo "${{ secrets.DEPLOY_PASSWORD }}" | sudo -S su - ${{ secrets.DEPLOY_USER }} -c "scp -r -i ${{ secrets.SSH_PRIVATE_KEY }} -P ${{ secrets.DEPLOY_PORT }} build/ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:~/deploy"
+      run: scp -r -i ${{ secrets.SSH_PRIVATE_KEY }} -P ${{ secrets.DEPLOY_PORT }} build/ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:~/deploy
       shell: bash
+    
     
     - name: SSH into Server and Restart Nginx
       uses: appleboy/ssh-action@master
