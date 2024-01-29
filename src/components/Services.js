@@ -10,22 +10,22 @@ import { fadeIn } from '../variants';
 const services = [
   {
   name: 'Frontend Developer',
-  description: 'Ipsum occaecat ullamco enim pariatur est eiusmod minim eu. Quis incididunt laboris minim duis anim sit culpa esse. Ut velit eu veniam labore. ',
+  description: 'Experienced Frontend Developer adept in Laravel and ReactJS, creating dynamic interfaces with precision, efficiency, and innovation.',
   link: 'Learn more'
   },
   {
     name: 'Backend Developer',
-    description: 'Ipsum occaecat ullamco enim pariatur est eiusmod minim eu. Quis incididunt laboris minim duis anim sit culpa esse. Ut velit eu veniam labore. ',
+    description: 'Backend Developer skilled in ExpressJS, Laravel, and Golang. Expertise in crafting robust, efficient, and scalable server-side solutions.',
     link: 'Learn more'
   },
   {
     name: 'Cloud Engineer',
-    description: 'Ipsum occaecat ullamco enim pariatur est eiusmod minim eu. Quis incididunt laboris minim duis anim sit culpa esse. Ut velit eu veniam labore. ',
+    description: 'Cloud Engineer proficient in Google Cloud Platform, Docker, Jenkins, and SaaS. Expert in optimizing cloud infrastructure for seamless operations.',
     link: 'Learn more'
   },
   {
     name: 'UI/UX Designer ',
-    description: 'Ipsum occaecat ullamco enim pariatur   est eiusmod minim eu. Quis incididunt laboris minim duis anim sit culpa esse. Ut velit eu veniam labore. ',
+    description: 'UI/UX Designer skilled in group-based Hi-Fi design. Proficient in creating visually stunning and user-centric interfaces for enhanced user experiences.',
     link: 'Learn more'
   },
 ]
