@@ -43,12 +43,12 @@ const Work = () => {
               {/* pretitle */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
                 <span className='text-gradient'>
-                  UI/UX Design
+                  Backend Developer
                 </span>
               </div>
               {/* title */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>projects Title</span>
+                <span className='text-3xl text-white'>e-waste using expressJS</span>
               </div>
             </div>
           </motion.div>
@@ -77,7 +77,7 @@ const Work = () => {
               </div>
               {/* title */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>projects Title</span>
+                <span className='text-3xl text-white'>earthquake analysis information system</span>
               </div>
             </div>
             {/* image */}
@@ -93,12 +93,12 @@ const Work = () => {
               {/* pretitle */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
                 <span className='text-gradient'>
-                  UI/UX Design
+                  Frontend Developer
                 </span>
               </div>
               {/* title */}
-              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>projects Title</span>
+              <div className='absolute -bottom-full left-12 group-hover:bottom-4 transition-all duration-700 z-50'>
+                <span className='text-3xl text-white'>Cibeureum market management module uses ReactJS</span>
               </div>
             </div>
           </motion.div>
