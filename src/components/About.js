@@ -77,8 +77,8 @@ const About = () => {
                 spy={true} >
                   <button className='btn btn-lg'>Contact me</button>
               </Link>
-              <a href='/' className='text-gradient btn-link'>
-                My Portfolio
+              <a href='/cv' className='text-gradient btn-link'>
+                My Resume
               </a>
             </div>
           </motion.div>
