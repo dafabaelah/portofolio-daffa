@@ -5,7 +5,7 @@ const PdfShow = () => {
 
     const docs = [
         { 
-            uri: "https://daffa-af.tech/my-documents/CV-DAFFA_AKHDAN_FADHILLAH-eng.pdf",
+            uri: "https://cdn.jsdelivr.net/gh/dafabaelah/dafabaelah@main/CV%20-%20DAFFA%20AKHDAN%20FADHILLAH.pdf",
             fileType: "pdf",
             fileName: "cv.pdf",
         },

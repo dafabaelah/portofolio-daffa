@@ -111,7 +111,7 @@ const Banner = () => {
             whileInView={'show'}
             className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]'
           >
-            <img src={Image} alt="avatar" />
+            <img src='https://cdn.jsdelivr.net/gh/dafabaelah/portofolio-daffa@main/src/assets/avatar-df.svg' alt="avatar" />
           </motion.div>
         </div>
 
