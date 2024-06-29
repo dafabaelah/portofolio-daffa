@@ -21,13 +21,13 @@ const Banner = () => {
       <div className='container mx-auto'>
         <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
           {/* text */}
-          <div className='flex-1 text-center font-secondary lg:text-left'>
+          <div className='flex-1 text-center font-secondary lg:text-left lg:mt-[-75px]'>
             <motion.h1 
               variants={fadeIn('up', 0.3)}
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='text-[45px] font-bold leading-[0.8] lg:text-[90px]'
+              className='text-[45px] font-bold leading-[0.8] lg:text-[70px]'
             >
               DAFFA <span>AKHDAN FADHILLAH</span>
             </motion.h1>
@@ -36,7 +36,7 @@ const Banner = () => {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'
+              className='mb-3 text-[36px] lg:text-[40px] font-secondary font-semibold uppercase leading-[1]'
             >
               <span className='text-white mr-4'>I am a</span>
               <TypeAnimation 
@@ -61,7 +61,7 @@ const Banner = () => {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='mb-8 max-w-lg mx-auto lg:mx-0'
+              className='max-w-lg mx-auto lg:mx-0'
             >
               Passionate Computer Engineering graduate with hands-on experience in PHP and JavaScript for both Frontend and Backend web development, eager to contribute to innovative projects and dynamic teams.
 
@@ -89,7 +89,7 @@ const Banner = () => {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'
+              className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0 lg:mt-[-30px]'
             >
               <a href='/'>
                 <FaYoutube />
