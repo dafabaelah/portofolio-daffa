@@ -1,5 +1,5 @@
 # Stage 1: Build React App
-FROM node:16.13.2 AS build
+FROM node:18.20.3-slim AS build
 WORKDIR /app
 COPY . .
 RUN npm install
