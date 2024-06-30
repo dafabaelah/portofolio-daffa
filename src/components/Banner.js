@@ -1,6 +1,6 @@
 import React from 'react';
 // images
-import Image from '../assets/avatar-df.svg';
+// import Image from '../assets/avatar-df.svg';
 // icons
 import { FaGithub, FaYoutube, FaLinkedin} from 'react-icons/fa';
 // type animation
@@ -11,6 +11,8 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 // import link
 import { Link } from 'react-scroll';
+
+import { Link as Ldom } from 'react-router-dom';
 
 const Banner = () => {
   return (
@@ -79,9 +81,9 @@ const Banner = () => {
                 spy={true} >
                   <button className='btn btn-lg'>Contact me</button>
               </Link>
-              <a href='/cv' className='text-gradient btn-link'>
+                <Ldom to='/cv' className='text-gradient btn-link'>
                 My Resume
-                </a>
+                </Ldom>
             </motion.div>
             {/* social media */}
             <motion.div 
@@ -91,15 +93,14 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0 lg:mt-[-30px]'
             >
-              <a href='/'>
+              <a href='https://www.youtube.com/@daffa-akhdan-fadhillah' aria-label='YouTube Daffa Akhdan Fadhillah'>
                 <FaYoutube />
               </a>
-              <a href='https://github.com/dafabaelah'>
+              <a href='https://github.com/dafabaelah' aria-label='Github Daffa akhdan Fadhillah'>
                 <FaGithub />
               </a>
               <a
-                href='https://www.linkedin.com/in/daffa-akhdan-fadhillah/'
-              >
+                href='https://www.linkedin.com/in/daffa-akhdan-fadhillah/' aria-label='Linkedin Daffa Akhdan Fadhillah'>
                 <FaLinkedin />
               </a>
             </motion.div>
@@ -109,9 +110,9 @@ const Banner = () => {
             variants={fadeIn('down', 0.5)}
             initial='hidden'
             whileInView={'show'}
-            className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]'
+            className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px] lg:-mt-11'
           >
-            <img src='https://cdn.jsdelivr.net/gh/dafabaelah/portofolio-daffa@main/src/assets/avatar-df.svg' alt="avatar" />
+            <img src='https://cdn.jsdelivr.net/gh/dafabaelah/portofolio-daffa@main/src/assets/avatar-df.svg' alt="avatar" width="400px" />
           </motion.div>
         </div>
 

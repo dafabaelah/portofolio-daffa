@@ -33,7 +33,7 @@ const Work = () => {
             {/* image */}
             <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
               {/* overlay */}
-              <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
+              <div className='group-hover:bg-black/70 w-full h-full absolute z-10 transition-all duration-300'></div>
               {/* img */}
               <img
                 className='group-hover:scale-125 transition-all duration-500'
@@ -41,13 +41,13 @@ const Work = () => {
                 alt='' 
               />
               {/* pretitle */}
-              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
+              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-20'>
                 <span className='text-gradient'>
                   Backend Developer
                 </span>
               </div>
               {/* title */}
-              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
+              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-20'>
                 <span className='text-3xl text-white'>e-waste using expressJS</span>
               </div>
             </div>
@@ -62,7 +62,7 @@ const Work = () => {
             {/* image */}
             <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
               {/* overlay */}
-              <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
+              <div className='group-hover:bg-black/70 w-full h-full absolute z-10 transition-all duration-300'></div>
               {/* img */}
               <img
                 className='group-hover:scale-125 transition-all duration-500'
@@ -70,20 +70,20 @@ const Work = () => {
                 alt='' 
               />
               {/* pretitle */}
-              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
+              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-20'>
                 <span className='text-gradient'>
                   UI/UX Design
                 </span>
               </div>
               {/* title */}
-              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
+              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-20'>
                 <span className='text-3xl text-white'>earthquake analysis information system</span>
               </div>
             </div>
             {/* image */}
             <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
               {/* overlay */}
-              <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
+              <div className='group-hover:bg-black/70 w-full h-full absolute z-10 transition-all duration-300'></div>
               {/* img */}
               <img
                 className='group-hover:scale-125 transition-all duration-500'
@@ -91,13 +91,13 @@ const Work = () => {
                 alt='' 
               />
               {/* pretitle */}
-              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
+              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-20'>
                 <span className='text-gradient'>
                   Frontend Developer
                 </span>
               </div>
               {/* title */}
-              <div className='absolute -bottom-full left-12 group-hover:bottom-4 transition-all duration-700 z-50'>
+              <div className='absolute -bottom-full left-12 group-hover:bottom-4 transition-all duration-700 z-20'>
                 <span className='text-3xl text-white'>Cibeureum market management module uses ReactJS</span>
               </div>
             </div>

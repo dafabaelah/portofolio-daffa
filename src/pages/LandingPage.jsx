@@ -10,7 +10,7 @@ import Contact from '../components/Contact';
 
 const LandingPage = () => {
     return(
-        <div className='bg-site bg-no-repeat bg-cover overflow-hidden'>
+        <div className='bg-site bg-no-repeat bg-cover overflow-hidden bg-[#1F0C3A]'>
         <Header />
         <Banner />
         <Nav />
