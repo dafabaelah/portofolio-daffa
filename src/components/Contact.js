@@ -6,7 +6,7 @@ import { fadeIn } from '../variants';
 
 const Contact = () => {
   const handleFormSubmit  = () => {
-    const email = 'mailto:daffa@daffa-af.tech?subject';
+    const email = 'mailto:daffaakhdanfadhillah@gmail.com?subject';
     const subject = 'subject=Hello%20Daffa';
     const body = 'body=Hi%20Daffa%2C%0A%0AI%20would%20like%20to%20discuss%20with%20you%20about%20%5Binsert%20subject%5D%20%3A)';
     window.open(`${email}&${subject}&${body}`);

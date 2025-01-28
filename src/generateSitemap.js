@@ -8,7 +8,7 @@ const yourDynamicUrls = [
 ];
 
 // Buat objek SitemapStream
-const stream = new SitemapStream({ hostname: 'https://daffa-af.tech' });
+const stream = new SitemapStream({ hostname: 'https://daffa-af.my.id' });
 
 // Tambahkan URL ke sitemap dengan prioritas
 yourDynamicUrls.forEach((item) => {
